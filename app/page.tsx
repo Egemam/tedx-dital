@@ -42,7 +42,7 @@ export default function Home() {
                          <h3 className="absolute text-2xl translate-x-3 -translate-y-10">What is TEDX</h3>
                      </div>
                      <p className="text-xl m-1">
-                         TEDx is a program of local, independently organized events that bring people together to share powerful ideas through inspiring talks and performances. Our TEDx event follows the TED mission of "Ideas Worth Spreading," offering a platform for visionaries and changemakers to share their stories.
+                         TEDx is a program of local, independently organized events that bring people together to share powerful ideas through inspiring talks and performances. Our TEDx event follows the TED mission of &quot;Ideas Worth Spreading,&quot; offering a platform for visionaries and changemakers to share their stories.
                      </p>
                  </div>
                  <div className={`${arsenal.className} w-110`}>
@@ -70,6 +70,9 @@ export default function Home() {
                 <h3 className="text-5xl">OUR SPEAKERS</h3>
                  <p className="xl">Dive into the inspiring journey, achievements, and unique insights of our guest speaker—learn what makes their story worth hearing on the TEDx stage!"</p>
                  <Link href="/speakers" className="p-3 border-2 border-white text-lg duration-300 hover:bg-black/20">CLICK TO SEE OUR SPEAKERS</Link>
+             </div>
+             <div>
+
              </div>
          </main>
      </div>
