@@ -68,7 +68,7 @@ export default function Home() {
              </div>
              <div className="bg-red-950 flex flex-col gap-3 m-10 p-10 text-center w-110">
                 <h3 className="text-5xl">OUR SPEAKERS</h3>
-                 <p className="xl">Dive into the inspiring journey, achievements, and unique insights of our guest speaker—learn what makes their story worth hearing on the TEDx stage!"</p>
+                 <p className="xl">Dive into the inspiring journey, achievements, and unique insights of our guest speaker—learn what makes their story worth hearing on the TEDx stage!</p>
                  <Link href="/speakers" className="p-3 border-2 border-white text-lg duration-300 hover:bg-black/20">CLICK TO SEE OUR SPEAKERS</Link>
              </div>
              <div>
