@@ -1,10 +1,28 @@
-import {Arsenal ,League_Gothic, Gilda_Display} from "next/font/google";
+import {Arsenal ,League_Gothic, Gilda_Display, Tenor_Sans, Biryani, Crimson_Pro} from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 
 const leagueGothic = League_Gothic({
     variable: "--font-league-gothic",
     subsets: ["latin"],
+})
+
+const crimsonPro = Crimson_Pro({
+    variable: "--font-crimson-pro",
+    subsets: ["latin"],
+    weight:"400",
+})
+
+const biryani = Biryani({
+    variable: "--font-biryani",
+    subsets: ["latin"],
+    weight: "200",
+})
+
+const tenorSans = Tenor_Sans({
+    variable: "--font-tenor-sans",
+    subsets: ["latin"],
+    weight: "400",
 })
 
 const arsenal = Arsenal({
@@ -34,7 +52,7 @@ export default function Home() {
             </p>
         </header>
          <span className="h-0.5 w-full bg-white/10"></span>
-         <main className="flex flex-col gap-5 items-center w-full bg-[url(/background2.jpg)] bg-blend-multiply bg-black/70 bg-cover bg-no-repeat bg-center py-20">
+         <main className="flex flex-col gap-10 items-center w-full bg-[url(/background2.jpg)] bg-blend-multiply bg-black/70 bg-cover bg-no-repeat bg-center py-20">
              <div className="flex gap-4 justify-center p-6">
                  <div className={`${arsenal.className} w-110`}>
                      <div>
@@ -66,13 +84,16 @@ export default function Home() {
                      </p>
                  </div>
              </div>
-             <div className="bg-red-950 flex flex-col gap-3 m-10 p-10 text-center w-110">
-                <h3 className="text-5xl">OUR SPEAKERS</h3>
-                 <p className="xl">Dive into the inspiring journey, achievements, and unique insights of our guest speaker—learn what makes their story worth hearing on the TEDx stage!</p>
-                 <Link href="/speakers" className="p-3 border-2 border-white text-lg duration-300 hover:bg-black/20">CLICK TO SEE OUR SPEAKERS</Link>
+             <div className="bg-red-950 flex flex-col gap-6 m-10 p-10 text-center w-110">
+                <h3 className={`text-4xl ${tenorSans.className}`}>OUR SPEAKERS</h3>
+                 <p className={`text-lg ${biryani.className}`}>Dive into the inspiring journey, achievements, and unique insights of our guest speaker—learn what makes their story worth hearing on the TEDx stage!</p>
+                 <Link href="/speakers" className={`${crimsonPro.className} underline p-3 border-2 border-white text-lg duration-300 hover:bg-black/20`}>CLICK TO SEE OUR SPEAKERS</Link>
              </div>
-             <div>
-
+             <div className="text-center flex flex-col items-center gap-4 p-10 md:w-1/2">
+                <h3 className={`text-5xl ${tenorSans.className}`}>REGISTER AND GET YOUR TICKET</h3>
+                 <p className={`text-2xl px-20 ${biryani.className}`}>Secure your spot for TEDxDITAL Youth! Click the button below to complete your registration and payment.
+                 </p>
+                 <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdVGOWf-MWG1tXgZOJykViuKdFhtZTHxz-cENSaU-K2rK_PnA/viewform" className={`${gildaDisplay.className} text-4xl underline hover:scale-105 duration-300`}>Register Now!</Link>
              </div>
          </main>
      </div>
