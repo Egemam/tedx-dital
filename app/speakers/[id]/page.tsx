@@ -26,7 +26,7 @@ export default function SpeakerPage({ params }: {params: Promise<{ id: string }>
         "oltan-baran",
     ];
 
-    const speaker_details: Record<typeof speakers[number], { name: string; title: String; description: ReactElement }> = {
+    const speaker_details: Record<typeof speakers[number], { name: string; title: string; description: ReactElement }> = {
         "omer-ozkan": {
             name: "Ömer Özkan",
             title: "Profesör Doktor",

@@ -42,7 +42,7 @@ export default function Home() {
      <div className="flex flex-col items-center justify-center">
          <header className={`${gildaDisplay.className} bg-[url(/background1.jpg)] gap-4 py-20 md:py-30 w-full bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center`}>
             <h1 className={`flex flex-col text-6xl md:text-9xl ${leagueGothic.className} text-center`}>
-                <p><span className="text-red-600 drop-shadow-[0px_0px_15px_rgba(255,0,0,0.4)]">TEDX</span><span className="drop-shadow-[0px_0px_15px_rgba(255,255,255,0.5)]"> DITAL YOUTH'A</span></p>
+                <p><span className="text-red-600 drop-shadow-[0px_0px_15px_rgba(255,0,0,0.4)]">TEDX</span><span className="drop-shadow-[0px_0px_15px_rgba(255,255,255,0.5)]"> DITAL YOUTH&apos;A</span></p>
                 <p><span className="drop-shadow-[0px_0px_15px_rgba(255,255,255,0.5)]">HOŞ GELDİNİZ</span></p>
             </h1>
             <span className="h-1 w-[calc(50%+7rem)] bg-white drop-shadow-[0px_0px_15px_rgba(255,255,255,0.9)]"/>
@@ -60,7 +60,7 @@ export default function Home() {
                          <h3 className="absolute text-2xl translate-x-3 -translate-y-10">TEDx Nedir?</h3>
                      </div>
                      <p className="text-xl m-1">
-                         TEDx, insanları ilham verici konuşmalar ve performanslar aracılığıyla güçlü fikirleri paylaşmak için bir araya getiren, yerel ve bağımsız olarak organize edilen etkinlikler programıdır. Bizim TEDx etkinliğimiz de, TED'in "Paylaşmaya Değer Fikirler" misyonunu takip ederek, vizyonerlerin ve değişim öncülerinin hikâyelerini paylaşmaları için bir platform sunar.
+                         TEDx, insanları ilham verici konuşmalar ve performanslar aracılığıyla güçlü fikirleri paylaşmak için bir araya getiren, yerel ve bağımsız olarak organize edilen etkinlikler programıdır. Bizim TEDx etkinliğimiz de, TED&apos;in &quot;Paylaşmaya Değer Fikirler&quot; misyonunu takip ederek, vizyonerlerin ve değişim öncülerinin hikâyelerini paylaşmaları için bir platform sunar.
                      </p>
                  </div>
                  <div className={`${arsenal.className} md:w-110 w-80`}>
@@ -69,7 +69,7 @@ export default function Home() {
                          <h3 className="absolute text-2xl translate-x-3 -translate-y-10">Etkinlik Yeri</h3>
                      </div>
                      <p className="text-xl m-1">
-                         Etkinliğimiz, Dr. İlhami Tankut Anadolu Lisesi'nde gerçekleştirilecektir. Sizleri öğrenme ve yenilik dolu bir ortamda ağırlamayı sabırsızlıkla bekliyoruz.
+                         Etkinliğimiz, Dr. İlhami Tankut Anadolu Lisesi&apos;nde gerçekleştirilecektir. Sizleri öğrenme ve yenilik dolu bir ortamda ağırlamayı sabırsızlıkla bekliyoruz.
                      </p>
                  </div>
                  <div className={`${arsenal.className} md:w-110 w-80`}>
