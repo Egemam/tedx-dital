@@ -194,7 +194,7 @@ export default function SpeakerPage({ params }: {params: Promise<{ id: string }>
                     {speaker_details[id].title}
                 </h2>
             </header>
-            <main className="flex flex-wrap md:flex-nowrap py-6 gap-10 text-lg items-center bg-red-500/10 rounded-xl">
+            <main className="flex flex-wrap md:flex-nowrap py-6 p-3 gap-10 text-lg items-center bg-red-500/10 rounded-xl">
                 <div className="flex flex-col items-center gap-5 min-w-2/5">
                     <Image src={`/speakers/${id}.jpg`} height={350} width={350} alt={id}/>
                 </div>
