@@ -18,27 +18,27 @@ export default function SpeakerPage({ params }: {params: Promise<{ id: string }>
             name: "Ömer Özkan",
             description:
                 <>
-                    <p>Ömer Özkan, 1971'de Ankara’da doğdu. Dünyadaki ilk rahim nakli ve
-                        Türkiye'deki ilk çift kol nakli gibi ulusal ve uluslararası düzeyde
+                    <p>Ömer Özkan, 1971&apos;de Ankara’da doğdu. Dünyadaki ilk rahim nakli ve
+                        Türkiye&apos;deki ilk çift kol nakli gibi ulusal ve uluslararası düzeyde
                         birçok başarıya ve ilke imza atmış bir isimdir.
                     </p>
                     <p>
-                        Öğrenim hayatına Ankara'da başlamış, Ankara Cumhuriyet
+                        Öğrenim hayatına Ankara&apos;da başlamış, Ankara Cumhuriyet
                         Lisesinden 1988 yılında mezun olduktan sonra Hacettepe Üniversite
-                        Tıp Fakül tesini okudu. 1995'te tıp doktoru ünvanı alan Özkan,
+                        Tıp Fakül tesini okudu. 1995&apos;te tıp doktoru ünvanı alan Özkan,
                         uzmanlık eğitimini yine Hacettepe Üniversitesi Tıp Fakül tesinde
                         Plastik, Rekonstrüktif ve Estetik
                     </p>
                     <p>
                         Cerrahi alanında almıştır. 2001 yılından itibaren Akdeniz Üniversitesi Tıp Fakül tesinde görev
                         yapmaya başlayan Özkan, bu sürede dünyanın sayılı merkezlerinde mikrocerrahinin farklı
-                        alanlarında çalışmaya devam etmiştir. Japonya'da Perforator Flepler ve Supermikrocerrahi
-                        alanında, Tayvan Shou Üniversitesi, E-Da Hastanesi'nde Plastik Cerrahi ve El Cerrahisi
-                        alanında, Almanya Münih'te Bogenhausen Technical Universityde EURAPS Young Plastic
+                        alanlarında çalışmaya devam etmiştir. Japonya&apos;da Perforator Flepler ve Supermikrocerrahi
+                        alanında, Tayvan Shou Üniversitesi, E-Da Hastanesi&apos;nde Plastik Cerrahi ve El Cerrahisi
+                        alanında, Almanya Münih&apos;te Bogenhausen Technical Universityde EURAPS Young Plastic
                         Surgeons bursu ile genel mikrocerrahi alanında klinik fellowluk yapmıştır. 2004 yılında
                         yardımcı doçent olan Özkan, 2006 yılında doçent ünvanı almaya hak kazanmıştır. 2007
                         yılında Akdeniz Üniversitesi Teşvik Ödülü, 2010 yılında ATSO Yılın Bilim Adamı Ödülü, 2011
-                        yılında Sağlık Bakanlığı Yılın Doktoru Ödülü Ömer Özkan'ın aldığı ödüllerden bazılarıdır.
+                        yılında Sağlık Bakanlığı Yılın Doktoru Ödülü Ömer Özkan&apos;ın aldığı ödüllerden bazılarıdır.
                     </p>
                 </>
         },
@@ -101,7 +101,7 @@ export default function SpeakerPage({ params }: {params: Promise<{ id: string }>
             description:
                 <>
                     Uğur Önür, 1987 yılında Burdur ’un Çel tikçi ilçesine bağlı
-                    Kuzköy'de dünyaya geldi. Küçük yaşlarda amcasından etkilenmiş
+                    Kuzköy&apos;de dünyaya geldi. Küçük yaşlarda amcasından etkilenmiş
                     ve müziğe ilgi duymaya başlamıştır. Önür, aynı zamanda TRT
                     Ankara Radyosu sanatçısıdır. Sanatçının YouTube hesabında
                     toplamda 164 tane videosu bulunmaktadır. Önür hem Burdur
