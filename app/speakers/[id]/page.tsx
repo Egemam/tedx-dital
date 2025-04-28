@@ -190,7 +190,7 @@ export default function SpeakerPage({ params }: {params: Promise<{ id: string }>
                 <h1 className="md:text-6xl text-4xl text-center">
                     <strong className={tenorSans.className}>{speaker_details[id].name}</strong>
                 </h1>
-                <h2 className="md:text-4xl text-3xl text-center">
+                <h2 className={`md:text-4xl text-3xl text-center ${tenorSans.className}`}>
                     {speaker_details[id].title}
                 </h2>
             </header>
