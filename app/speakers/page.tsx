@@ -1,10 +1,11 @@
 import Image from "next/image"
 import Link from "next/link";
+import type {ReactElement} from "react";
 
 export default function Home() {
 
     const speakers = [["omer-ozkan","Ömer Özkan"],["mehmet-gurcan","Mehmet Gürcan"],["ilker-arslan","İlker Arslan"],["ugur-onur","Uğur Önür"],["boran-eser-kavaz","Boran Eser Kavaz"],["oltan-baran","Oltan Baran"]]
-    const speakers_buttons = []
+    const speakers_buttons = new Array(ReactElement)
     speakers.forEach(speaker => {
         speakers_buttons.push(
             <Link href={`/speakers/${speaker[0]}`} key={speaker[0]} className="flex flex-col-reverse text-center drop-shadow-xl drop-shadow-white/10 hover:drop-shadow-white/20 hover:scale-105 hover:shadow-2xl duration-200 ">
