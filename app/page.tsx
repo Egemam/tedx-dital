@@ -45,14 +45,14 @@ export default function Home() {
                 <p><span className="text-red-600 drop-shadow-[0px_0px_15px_rgba(255,0,0,0.4)]">TEDX</span><span className="drop-shadow-[0px_0px_15px_rgba(255,255,255,0.5)]"> DITAL YOUTH&apos;A</span></p>
                 <p><span className="drop-shadow-[0px_0px_15px_rgba(255,255,255,0.5)]">HOŞ GELDİNİZ</span></p>
             </h1>
-            <span className="h-1 w-[calc(50%+7rem)] bg-white drop-shadow-[0px_0px_15px_rgba(255,255,255,0.9)]"/>
+            <span className="h-1 w-[calc(60%+5rem)] bg-white drop-shadow-[0px_0px_15px_rgba(255,255,255,0.9)]"/>
             <h2 className="text-2xl md:text-3xl text-center">İlham Veren Fikirler, Dönüştüren Bakış Açıları</h2>
             <p className="text-lg md:text-xl mx-[calc(40%-10rem)] text-center">
                 Geleceği şekillendiren sohbetleri canlandıran, ufuk açıcı fikirlerin paylaşıldığı unutulmaz bir TEDx deneyimi için bize katılın.
             </p>
         </header>
          <span className="h-0.5 w-full bg-white/10"></span>
-         <main className="flex flex-col gap-10 items-center w-full bg-[url(/background2.jpg)] bg-blend-multiply bg-black/70 bg-cover bg-no-repeat bg-center py-20">
+         <main className="flex flex-col gap-10 items-center w-full bg-[url(/background2.jpg)] bg-blend-multiply bg-black/70 bg-cover bg-no-repeat bg-center pt-20">
              <div className="flex flex-col md:flex-row gap-4 gap-y-10 justify-center p-6">
                  <div className={`${arsenal.className} md:w-110 w-80`}>
                      <div>
@@ -83,15 +83,19 @@ export default function Home() {
                  </div>
              </div>
              <div className="bg-red-950 flex flex-col md:gap-6 gap-3 m-10 p-6 my-20 md:p-10 text-center w-70 md:w-110">
-                <h3 className={`text-xl md:text-4xl ${tenorSans.className}`}>KONUŞMACILARIMIZ</h3>
+                <h3 className={`text-xl md:text-3xl ${tenorSans.className}`}>KONUŞMACILARIMIZ</h3>
                  <p className={`md:text-lg ${biryani.className}`}>Konuk konuşmacılarımızın ilham verici yolculuğuna, başarılarına ve eşsiz bakış açılarına yakından bakın — hikâyelerinin TEDx sahnesinde dinlemeye değer olmasını sağlayan unsurları keşfedin!</p>
-                 <Link href="/speakers" className={`${crimsonPro.className} underline p-1 md:p-3 border-2 border-white md:text-lg duration-300 hover:bg-black/20`}>KONUŞMACILARIMIZI GÖRMEK İÇİN TIKLAYIN</Link>
+                 <Link href="/speakers" className={`${crimsonPro.className} underline p-1 md:p-2 border-2 border-white md:text-lg duration-300 hover:bg-black/20`}>KONUŞMACILARIMIZI GÖRMEK İÇİN TIKLAYIN</Link>
              </div>
              <div className="text-center flex flex-col items-center gap-4 p-6 md:p-10 md:w-1/2">
                 <h3 className={`text-3xl md:text-5xl ${tenorSans.className}`}>KAYDOL VE BİLETİNİ AL</h3>
                  <p className={`text-xl md:text-2xl px-5 md:px-20 ${biryani.className}`}>TEDxDITAL Youth etkinliğinde yerini garantile! Aşağıdaki butona tıklayarak kayıt ve ödeme işlemini tamamlayabilirsin.</p>
                  <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdVGOWf-MWG1tXgZOJykViuKdFhtZTHxz-cENSaU-K2rK_PnA/viewform" className={`${gildaDisplay.className} text-3xl md:text-4xl underline hover:scale-105 duration-300`}>Hemen Kaydol!</Link>
              </div>
+             <footer className="flex gap-10 bg-black w-full justify-center p-3">
+                 <a href="https://www.instagram.com/tedx_dital/"><Image src="/instagram.jpg" alt="instagram" width={30} height={30} className="rounded-full"/></a>
+                 <a href="mailto:tedxditalyouth@gmail.com"><Image src="/mail.jpg" alt="mail" width={30} height={30} className="rounded-full"/></a>
+             </footer>
          </main>
      </div>
   );

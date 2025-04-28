@@ -1,6 +1,13 @@
 import Image from "next/image"
 import Link from "next/link";
 import type {ReactElement} from "react";
+import {Gilda_Display} from "next/font/google";
+
+const gildaDisplay = Gilda_Display({
+    variable: "--font-gilda-display",
+    subsets: ["latin"],
+    weight: "400",
+})
 
 export default function Speakers() {
 
@@ -10,7 +17,7 @@ export default function Speakers() {
         speakers_buttons.push(
             <Link href={`/speakers/${speaker[0]}`} key={speaker[0]} className="flex flex-col text-center drop-shadow-xl drop-shadow-white/10 hover:drop-shadow-white/20 hover:scale-105 hover:shadow-2xl duration-200 ">
                 <Image src={`/speakers/${speaker[0]}.jpg`} alt={speaker[1]} className="border-4 border-y-8 border-white" width={300} height={300}></Image>
-                <h1 className="text-2xl md:text-3xl self-center px-3 p-0.5 m-1 underline">{speaker[1]}</h1>
+                <h1 className={`text-2xl md:text-3xl self-center px-3 p-0.5 m-1 underline ${gildaDisplay.className}`}>{speaker[1]}</h1>
             </Link>
         )
     })
