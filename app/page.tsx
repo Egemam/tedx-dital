@@ -41,9 +41,9 @@ export default function Home() {
   return (
      <div className="flex flex-col items-center justify-center">
          <header className={`${gildaDisplay.className} bg-[url(/background1.jpg)] gap-4 py-20 md:py-30 w-full bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center`}>
-            <h1 className={`flex flex-col text-6xl md:text-9xl ${leagueGothic.className} text-center drop-shadow-[0px_0px_15px_rgba(255,255,255,0.5)]`}>
-                <p>WELCOME TO TEDX</p>
-                <p>DITAL YOUTH</p>
+            <h1 className={`flex flex-col text-6xl md:text-9xl ${leagueGothic.className} text-center`}>
+                <p><span className="drop-shadow-[0px_0px_15px_rgba(255,255,255,0.5)]">WELCOME TO</span> <span className="text-red-600 drop-shadow-[0px_0px_15px_rgba(255,0,0,0.4)]">TEDX</span></p>
+                <p><span className="drop-shadow-[0px_0px_15px_rgba(255,255,255,0.5)]">DITAL YOUTH</span></p>
             </h1>
             <span className="h-1 w-[calc(50%+7rem)] bg-white drop-shadow-[0px_0px_15px_rgba(255,255,255,0.9)]"/>
             <h2 className="text-2xl md:text-3xl text-center">Inspiring Ideas, Transforming Perspectives</h2>
@@ -57,7 +57,7 @@ export default function Home() {
                  <div className={`${arsenal.className} md:w-110 w-80`}>
                      <div>
                         <Image src="/tedx.jpg" className="rounded-xl" alt="TEDX" height={400} width={400}/>
-                         <h3 className="absolute text-2xl translate-x-3 -translate-y-10">What is TEDX</h3>
+                         <h3 className="absolute text-2xl translate-x-3 -translate-y-10">What is TEDx</h3>
                      </div>
                      <p className="text-xl m-1">
                          TEDx is a program of local, independently organized events that bring people together to share powerful ideas through inspiring talks and performances. Our TEDx event follows the TED mission of &quot;Ideas Worth Spreading,&quot; offering a platform for visionaries and changemakers to share their stories.
