@@ -190,11 +190,11 @@ export default function SpeakerPage({ params }: {params: Promise<{ id: string }>
                 <h1 className="md:text-6xl text-4xl text-center">
                     <strong className={tenorSans.className}>{speaker_details[id].name}</strong>
                 </h1>
-                <h2 className="md:text-4xl text-3xl">
+                <h2 className="md:text-4xl text-3xl text-center">
                     {speaker_details[id].title}
                 </h2>
             </header>
-            <main className="flex flex-wrap md:flex-nowrap py-6 text-lg items-center bg-red-500/10 rounded-xl">
+            <main className="flex flex-wrap md:flex-nowrap py-6 gap-10 text-lg items-center bg-red-500/10 rounded-xl">
                 <div className="flex flex-col items-center gap-5 min-w-2/5">
                     <Image src={`/speakers/${id}.jpg`} height={350} width={350} alt={id}/>
                 </div>
