@@ -2,6 +2,19 @@ import { notFound } from "next/navigation";
 import { use } from "react";
 import Image from "next/image";
 import type { ReactElement } from "react";
+import {Tenor_Sans, Biryani} from "next/font/google";
+
+const tenorSans = Tenor_Sans({
+    variable: "--font-tenor-sans",
+    subsets: ["latin"],
+    weight: "400",
+})
+
+const biryani = Biryani({
+    variable: "--font-biryani",
+    subsets: ["latin"],
+    weight: "200",
+})
 
 export default function SpeakerPage({ params }: {params: Promise<{ id: string }>}) {
     const speakers = [
@@ -13,9 +26,10 @@ export default function SpeakerPage({ params }: {params: Promise<{ id: string }>
         "oltan-baran",
     ];
 
-    const speaker_details: Record<typeof speakers[number], { name: string; description: ReactElement }> = {
+    const speaker_details: Record<typeof speakers[number], { name: string; title: String; description: ReactElement }> = {
         "omer-ozkan": {
             name: "Ömer Özkan",
+            title: "Profesör Doktor",
             description:
                 <>
                     <p>Ömer Özkan, 1971&apos;de Ankara’da doğdu. Dünyadaki ilk rahim nakli ve
@@ -44,6 +58,7 @@ export default function SpeakerPage({ params }: {params: Promise<{ id: string }>
         },
         "mehmet-gurcan": {
             name: "Mehmet Gürcan",
+            title: "Konyaaltı İlçe Milli Eğitim Müdürü",
             description:
                 <>
                     <p>
@@ -77,6 +92,7 @@ export default function SpeakerPage({ params }: {params: Promise<{ id: string }>
         },
         "ilker-arslan": {
             name: "İlker Arslan",
+            title: "İl Emniyet Müdürü",
             description:
                 <>
                     <p>
@@ -98,6 +114,7 @@ export default function SpeakerPage({ params }: {params: Promise<{ id: string }>
         },
         "ugur-onur": {
             name: "Uğur Onur",
+            title: "Sanatçı",
             description:
                 <>
                     Uğur Önür, 1987 yılında Burdur ’un Çel tikçi ilçesine bağlı
@@ -115,6 +132,7 @@ export default function SpeakerPage({ params }: {params: Promise<{ id: string }>
         },
         "boran-eser-kavaz": {
             name: "Boran Eser Kavaz",
+            title: "Yazar-Turist Rehberi",
             description:
                 <>
                     <p>
@@ -138,6 +156,7 @@ export default function SpeakerPage({ params }: {params: Promise<{ id: string }>
         },
         "oltan-baran": {
             name: "Oltan Baran",
+            title: "Senarist",
             description:
                 <>
                     <p>
@@ -166,20 +185,20 @@ export default function SpeakerPage({ params }: {params: Promise<{ id: string }>
 
     console.log(id);
     return (
-        <main className="p-10 flex flex-wrap md:flex-nowrap justify-center gap-10">
-            <div className="flex flex-col items-center gap-5 min-w-2/5">
-                <header className="flex flex-col gap-2">
-                    <h1 className="md:text-6xl text-4xl text-center">
-                        <strong>{speaker_details[id].name}</strong>
-                    </h1>
-                </header>
-                <Image src={`/speakers/${id}.jpg`} height={350} width={350} alt={id}/>
-            </div>
-            <section className="grow">
-                <article className="flex flex-col gap-3 md:px-7 p-5 bg-red-950/10 rounded-xl">
-                    {speaker_details[id].description}
-                </article>
-            </section>
+        <main className="p-10 flex flex-col justify-center gap-10">
+            <header className="flex flex-col gap-2">
+                <h1 className="md:text-6xl text-4xl text-center">
+                    <strong className={tenorSans.className}>{speaker_details[id].name}</strong>
+                </h1>
+            </header>
+            <main className="flex flex-wrap md:flex-nowrap py-6 text-lg items-center bg-red-500/10 rounded-xl">
+                <div className="flex flex-col items-center gap-5 min-w-2/5">
+                    <Image src={`/speakers/${id}.jpg`} height={350} width={350} alt={id}/>
+                </div>
+                    <article className={`grow flex flex-col gap-3 md:px-7 bg-red-950/10 rounded-xl ${biryani.className}`}>
+                        {speaker_details[id].description}
+                    </article>
+            </main>
         </main>
     );
 }
