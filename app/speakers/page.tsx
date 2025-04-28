@@ -1,18 +1,21 @@
 import Image from "next/image"
+import Link from "next/link";
 
 export default function Home() {
 
-    const speakers = [["",""],["",""],["",""],["",""],["",""],["",""]]
+    const speakers = [["omer-ozkan","Ömer Özkan"],["mehmet-gurcan","Mehmet Gürcan"],["ilker-arslan","İlker Arslan"],["ugur-onur","Uğur Önür"],["boran-eser-kavaz","Boran Eser Kavaz"],["oltan-baran","Oltan Baran"]]
     const speakers_buttons = []
     speakers.forEach(speaker => {
         speakers_buttons.push(
-            <div className="flex flex-col text-6xl">
-                <Image src={`/${speaker[0]}.jpg`} alt={speaker[1]} width={100} height={100}></Image>
-                <h1 className="absolute">{speaker[1]}</h1>
-            </div>
+            <Link href={`/speakers/${speaker[0]}`} key={speaker[0]} className="flex flex-col-reverse text-center drop-shadow-xl drop-shadow-white/10 hover:drop-shadow-white/20 hover:scale-105 hover:shadow-2xl duration-200 ">
+                <Image src={`/speakers/${speaker[0]}.jpg`} alt={speaker[1]} className="rounded-xl" width={300} height={300}></Image>
+                <h1 className="absolute text-3xl self-center px-3 p-0.5 bg-gray-500/40 m-1 rounded-xl border-2 border-white">{speaker[1]}</h1>
+            </Link>
         )
     })
     return (
-        speakers_buttons
+        <div className="p-20 flex flex-wrap gap-40 items-center justify-center w-full">
+            {speakers_buttons}
+        </div>
     );
 }

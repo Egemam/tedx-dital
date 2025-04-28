@@ -1,0 +1,185 @@
+import { notFound } from "next/navigation";
+import { use } from "react";
+import Image from "next/image";
+import type { ReactElement } from "react";
+
+export default function SpeakerPage({ params }: {params: Promise<{ id: string }>}) {
+    const speakers = [
+        "omer-ozkan",
+        "mehmet-gurcan",
+        "ilker-arslan",
+        "ugur-onur",
+        "boran-eser-kavaz",
+        "oltan-baran",
+    ];
+
+    const speaker_details: Record<typeof speakers[number], { name: string; description: ReactElement }> = {
+        "omer-ozkan": {
+            name: "Ömer Özkan",
+            description:
+                <>
+                    <p>Ömer Özkan, 1971'de Ankara’da doğdu. Dünyadaki ilk rahim nakli ve
+                        Türkiye'deki ilk çift kol nakli gibi ulusal ve uluslararası düzeyde
+                        birçok başarıya ve ilke imza atmış bir isimdir.
+                    </p>
+                    <p>
+                        Öğrenim hayatına Ankara'da başlamış, Ankara Cumhuriyet
+                        Lisesinden 1988 yılında mezun olduktan sonra Hacettepe Üniversite
+                        Tıp Fakül tesini okudu. 1995'te tıp doktoru ünvanı alan Özkan,
+                        uzmanlık eğitimini yine Hacettepe Üniversitesi Tıp Fakül tesinde
+                        Plastik, Rekonstrüktif ve Estetik
+                    </p>
+                    <p>
+                        Cerrahi alanında almıştır. 2001 yılından itibaren Akdeniz Üniversitesi Tıp Fakül tesinde görev
+                        yapmaya başlayan Özkan, bu sürede dünyanın sayılı merkezlerinde mikrocerrahinin farklı
+                        alanlarında çalışmaya devam etmiştir. Japonya'da Perforator Flepler ve Supermikrocerrahi
+                        alanında, Tayvan Shou Üniversitesi, E-Da Hastanesi'nde Plastik Cerrahi ve El Cerrahisi
+                        alanında, Almanya Münih'te Bogenhausen Technical Universityde EURAPS Young Plastic
+                        Surgeons bursu ile genel mikrocerrahi alanında klinik fellowluk yapmıştır. 2004 yılında
+                        yardımcı doçent olan Özkan, 2006 yılında doçent ünvanı almaya hak kazanmıştır. 2007
+                        yılında Akdeniz Üniversitesi Teşvik Ödülü, 2010 yılında ATSO Yılın Bilim Adamı Ödülü, 2011
+                        yılında Sağlık Bakanlığı Yılın Doktoru Ödülü Ömer Özkan'ın aldığı ödüllerden bazılarıdır.
+                    </p>
+                </>
+        },
+        "mehmet-gurcan": {
+            name: "Mehmet Gürcan",
+            description:
+                <>
+                    <p>
+                        1977 yılında Burdur ilinin Bucak ilçesinde doğdu. Or taokul ve lise
+                        öğrenimini Bucak İmam Hatip Lisesinde, üniversiteyi Manisa Celal
+                        Bayar Üniversitesi Demirci Eğitim Fakül tesi Türkçe Öğretmenliği
+                        bölümünde tamamladı. Mersin Toros Üniversitesinde İşletme
+                        alanında tezsiz yüksek lisans ve Akdeniz Üniversitesi Eğitim
+                        Bilimleri Enstitüsü Eğitim Bilimleri Anabilim Dalında Eğitim
+                        Yönetimi Denetimi ve Planlaması alanında tezli yüksek lisans yaptı.
+                        Tez çalışması olarak “Devlet Okullarındaki Norm Fazlası Sınıf
+                        Öğretmenlerinin Norm Fazlası Öğretmen Olmaya İlişkin
+                        Görüşlerini” araştırdı.
+                    </p>
+                    <p>
+                        1999 yılında Batman İmam Hatip Lisesinde öğretmen olarak göreve başladıktan sonra
+                        Antalya ve Burdur illerinde öğretmen, okul müdür yardımcısı ve kurum müdürü
+                        olarak görev yaptı. 2014 yılından itibaren Ispar ta’nın Uluborlu ilçesinde Şube
+                        Müdürlüğü, Antalya’nın Gündoğmuş ilçesinde İlçe Millî Eğitim Müdürlüğü, Antalya İl
+                        Millî Eğitim Müdürlüğünde Şube Müdürlüğü ve İl Millî Eğitim Müdür Yardımcısı
+                        görevlerini yürüttü.
+                    </p>
+                    <p>
+                        07 Şubat 2024 tarihinden itibaren Antalya Konyaal tı İlçe Millî Eğitim Müdürü olarak
+                        görev yapmaktadır.
+                    </p>
+                    <p>
+                        Evli ve iki çocuk babasıdır.
+                    </p>
+                </>
+        },
+        "ilker-arslan": {
+            name: "İlker Arslan",
+            description:
+                <>
+                    <p>
+                        1994 yılında Polis Akademisinden Komiser Yardımcısı
+                        rütbesiyle mezun oldu. İlk görev yeri Ankara İl Emniyet
+                        Müdürlüğüdür. Daha sonra sırasıyla Emniyet Genel Müdürlüğü,
+                        Siir t ve Ankara olmak üzere çeşitli birimlerde, 2016-2021 yılları
+                        arasında Tanık Koruma Daire Başkanı olarak görev yaptı.
+                    </p>
+                    <p>
+                        2021-2024 yılları arasında ise 3 yıl boyunca Kuzey MakedonyaÜsküp Büyükelçiliği İçişleri Müşaviri olarak görev yaptı.
+                        16.08.2024 tarihli Cumhurbaşkanlığı Kararnamesi ile Antalya İl
+                        Emniyet Müdürü olarak atandı.
+                    </p>
+                    <p>
+                        İlker Arslan, Sivas doğumlu olup evli ve 3 çocuk babasıdır.
+                    </p>
+                </>
+        },
+        "ugur-onur": {
+            name: "Uğur Onur",
+            description:
+                <>
+                    Uğur Önür, 1987 yılında Burdur ’un Çel tikçi ilçesine bağlı
+                    Kuzköy'de dünyaya geldi. Küçük yaşlarda amcasından etkilenmiş
+                    ve müziğe ilgi duymaya başlamıştır. Önür, aynı zamanda TRT
+                    Ankara Radyosu sanatçısıdır. Sanatçının YouTube hesabında
+                    toplamda 164 tane videosu bulunmaktadır. Önür hem Burdur
+                    yöresine ait türküleri seslendirmekte hem de Anadolu’nun birçok
+                    yöresine ait eserleri icra etmektedir. Sanatçı Ispar ta Anadolu
+                    Güzel Sanatlar Lisesinde keman ve müzik eğitimi gördü. Daha
+                    sonra İstanbul Teknik Üniversitesi Türk Musikisi Devlet
+                    Konservatuvarı Temel Bilimler Bölümü’nde müzik eğitimi aldı.
+                    Sanatçının şu ana kadar 8 adet albüm çalışması bulunmaktadır.
+                </>
+        },
+        "boran-eser-kavaz": {
+            name: "Boran Eser Kavaz",
+            description:
+                <>
+                    <p>
+                        Boran Eser Kavaz, 1978’de Ankara’da doğdu. Eğitimini Ankara’da
+                        tamamladı, 13 yıl bankacılık sektöründe müfettiş ve idareci olarak
+                        çalıştı. 2009 yılında Antalya’ya taşınan Kavaz, kızına yaşadığı kenti
+                        anlatmak için Antalya’nın çok bilinmeyen hikayelerinin peşine
+                        düştü.
+                    </p>
+                    <p>
+                        Antalya Meraki adıyla da bilinen Kavaz, turist rehberi olarak
+                        Kaleiçi ve Antalya gezileri düzenliyor. Kavaz, aynı zamanda
+                        çalışmalarını sosyal medyada @antalyameraki sayfasında
+                        paylaşırken aynı isimli kitabı da var. Kavaz, kitabında Antalya
+                        piyazının nereden çıktığı, Kaleiçi’nin gizli kaçış tünelleri,
+                        Döşemeal tı, Hurma, Boğaçayı gibi yer adlarının kökeni gibi
+                        Antalya’ya dair merak edilen birçok konuyu kendine has üslubuyla
+                        anlatıyor.
+                    </p>
+                </>
+        },
+        "oltan-baran": {
+            name: "Oltan Baran",
+            description:
+                <>
+                    <p>
+                        Ol tan Baran, 1999 yılında Malatya’da doğdu, çocukluk ve ilk
+                        gençlik yılları Antalya’da geçti. 2024 yılında Boğaziçi Üniversitesi
+                        Türk Dili ve Edebiyatı ve Tarih bölümlerinden onur derecesiyle
+                        mezun oldu. Şu anda Boğaziçi Üniversitesinde Yeni Türk
+                        Edebiyatı alanında yüksek lisans eğitimine devam ediyor.
+                        Akademik çalışmalarının yanı sıra bir yapım şirketinde senarist
+                        olarak çalışan Ol tan, yazıya ve anlatıya duyduğu tutkuyla
+                        edebiyat , tiyatro ve sinema alanlarında üretmeyi sürdürüyor ve
+                        bu alanlar arasında geçişken bir dil kurmaya önem veriyor.
+                    </p>
+                </>
+        },
+    };
+
+    console.log("Received params:", params); // Debugging
+    const { id } = use(params);
+
+    if (!speakers.includes(id)) {
+        notFound();
+    }
+
+    //<a href="https://www.freepik.com/free-photo/color-smoke-abstract-wallpaper-aesthetic-background-design_17580806.htm">Image by rawpixel.com on Freepik</a>
+
+    console.log(id);
+    return (
+        <main className="p-10 flex flex-wrap md:flex-nowrap justify-center gap-10">
+            <div className="flex flex-col items-center gap-5 min-w-2/5">
+                <header className="flex flex-col gap-2">
+                    <h1 className="md:text-6xl text-4xl text-center">
+                        <strong>{speaker_details[id].name}</strong>
+                    </h1>
+                </header>
+                <Image src={`/speakers/${id}.jpg`} height={350} width={350} alt={id}/>
+            </div>
+            <section className="grow">
+                <article className="flex flex-col gap-3 md:px-7 p-5 bg-red-950/10 rounded-xl">
+                    {speaker_details[id].description}
+                </article>
+            </section>
+        </main>
+    );
+}
