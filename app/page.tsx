@@ -82,8 +82,8 @@ export default function Home() {
                      </p>
                  </div>
              </div>
-             <div className="bg-red-950 flex flex-col md:gap-6 gap-3 m-10 p-7 md:p-10 text-center w-70 md:w-110">
-                <h3 className={`text-2xl md:text-4xl ${tenorSans.className}`}>KONUŞMACILARIMIZ</h3>
+             <div className="bg-red-950 flex flex-col md:gap-6 gap-3 m-10 p-6 my-20 md:p-10 text-center w-70 md:w-110">
+                <h3 className={`text-xl md:text-4xl ${tenorSans.className}`}>KONUŞMACILARIMIZ</h3>
                  <p className={`md:text-lg ${biryani.className}`}>Konuk konuşmacılarımızın ilham verici yolculuğuna, başarılarına ve eşsiz bakış açılarına yakından bakın — hikâyelerinin TEDx sahnesinde dinlemeye değer olmasını sağlayan unsurları keşfedin!</p>
                  <Link href="/speakers" className={`${crimsonPro.className} underline p-1 md:p-3 border-2 border-white md:text-lg duration-300 hover:bg-black/20`}>KONUŞMACILARIMIZI GÖRMEK İÇİN TIKLAYIN</Link>
              </div>
