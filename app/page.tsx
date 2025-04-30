@@ -54,7 +54,7 @@ export default function Home() {
          <span className="h-0.5 w-full bg-white/10"></span>
          <main className="flex flex-col gap-10 items-center w-full bg-[url(/background2.jpg)] bg-blend-multiply bg-black/70 bg-cover bg-no-repeat bg-center pt-20">
              <div className="flex flex-col md:flex-row gap-4 gap-y-10 justify-center p-6">
-                 <div className={`${arsenal.className} md:w-110 w-80`}>
+                 <div className={`${arsenal.className} md:w-110 w-80 flex flex-col gap-3`}>
                      <div>
                         <Image src="/tedx.jpg" className="rounded-xl" alt="TEDX" height={400} width={400}/>
                          <h3 className="absolute text-2xl translate-x-3 -translate-y-10">TEDx Nedir?</h3>
@@ -63,7 +63,7 @@ export default function Home() {
                          TEDx, insanları ilham verici konuşmalar ve performanslar aracılığıyla güçlü fikirleri paylaşmak için bir araya getiren, yerel ve bağımsız olarak organize edilen etkinlikler programıdır. Bizim TEDx etkinliğimiz de, TED&apos;in &quot;Paylaşmaya Değer Fikirler&quot; misyonunu takip ederek, vizyonerlerin ve değişim öncülerinin hikâyelerini paylaşmaları için bir platform sunar.
                      </p>
                  </div>
-                 <div className={`${arsenal.className} md:w-110 w-80`}>
+                 <div className={`${arsenal.className} md:w-110 w-80 flex flex-col gap-3`}>
                      <div>
                          <Image src="/dital.jpg" className="rounded-xl" alt="DITAL" height={400} width={400}/>
                          <h3 className="absolute text-2xl translate-x-3 -translate-y-10">Etkinlik Yeri</h3>
@@ -72,7 +72,7 @@ export default function Home() {
                          Etkinliğimiz, Dr. İlhami Tankut Anadolu Lisesi&apos;nde gerçekleştirilecektir. Sizleri öğrenme ve yenilik dolu bir ortamda ağırlamayı sabırsızlıkla bekliyoruz.
                      </p>
                  </div>
-                 <div className={`${arsenal.className} md:w-110 w-80`}>
+                 <div className={`${arsenal.className} md:w-110 w-80 flex flex-col gap-3`}>
                      <div>
                          <Image src="/calendar.jpg" alt="Calendar" className="rounded-xl" height={400} width={400}/>
                          <h3 className="absolute text-2xl translate-x-3 -translate-y-10">Tarih</h3>
