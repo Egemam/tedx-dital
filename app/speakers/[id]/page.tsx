@@ -20,7 +20,6 @@ export default function SpeakerPage({ params }: {params: Promise<{ id: string }>
     const speakers = [
         "omer-ozkan",
         "mehmet-gurcan",
-        "ilker-arslan",
         "ugur-onur",
         "boran-eser-kavaz",
         "oltan-baran",
@@ -87,28 +86,6 @@ export default function SpeakerPage({ params }: {params: Promise<{ id: string }>
                     </p>
                     <p>
                         Evli ve iki çocuk babasıdır.
-                    </p>
-                </>
-        },
-        "ilker-arslan": {
-            name: "İlker Arslan",
-            title: "İl Emniyet Müdürü",
-            description:
-                <>
-                    <p>
-                        1994 yılında Polis Akademisinden Komiser Yardımcısı
-                        rütbesiyle mezun oldu. İlk görev yeri Ankara İl Emniyet
-                        Müdürlüğüdür. Daha sonra sırasıyla Emniyet Genel Müdürlüğü,
-                        Siir t ve Ankara olmak üzere çeşitli birimlerde, 2016-2021 yılları
-                        arasında Tanık Koruma Daire Başkanı olarak görev yaptı.
-                    </p>
-                    <p>
-                        2021-2024 yılları arasında ise 3 yıl boyunca Kuzey MakedonyaÜsküp Büyükelçiliği İçişleri Müşaviri olarak görev yaptı.
-                        16.08.2024 tarihli Cumhurbaşkanlığı Kararnamesi ile Antalya İl
-                        Emniyet Müdürü olarak atandı.
-                    </p>
-                    <p>
-                        İlker Arslan, Sivas doğumlu olup evli ve 3 çocuk babasıdır.
                     </p>
                 </>
         },
