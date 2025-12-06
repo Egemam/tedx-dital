@@ -78,7 +78,7 @@ export default function Home() {
                          <h3 className="absolute text-2xl translate-x-3 -translate-y-10">Tarih</h3>
                      </div>
                      <p className="text-xl m-1">
-                         Etkinliğimiz 10 Mayıs 2025 tarihinde gerçekleşecektir. Düşündüren konuşmalar ve ilham verici fikirlerle dolu bir gün için bize katılın.
+                         Etkinliğimiz 10 Aralık 2025 tarihinde gerçekleşecektir. Düşündüren konuşmalar ve ilham verici fikirlerle dolu bir gün için bize katılın.
                      </p>
                  </div>
              </div>
@@ -90,7 +90,7 @@ export default function Home() {
              <div className="text-center flex flex-col items-center gap-4 p-6 md:p-10 md:w-1/2">
                 <h3 className={`text-3xl md:text-5xl ${tenorSans.className}`}>KAYDOL VE BİLETİNİ AL</h3>
                  <p className={`text-xl md:text-2xl px-5 md:px-20 ${biryani.className}`}>TEDxDITAL Youth etkinliğinde yerini garantile! Aşağıdaki butona tıklayarak kayıt ve ödeme işlemini tamamlayabilirsin.</p>
-                 <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdVGOWf-MWG1tXgZOJykViuKdFhtZTHxz-cENSaU-K2rK_PnA/viewform" className={`${gildaDisplay.className} text-3xl md:text-4xl underline hover:scale-105 duration-300`}>Hemen Kaydol!</Link>
+                 <Link href="https://forms.gle/SQLytn4So12KWZ1G7" className={`${gildaDisplay.className} text-3xl md:text-4xl underline hover:scale-105 duration-300`}>Hemen Kaydol!</Link>
              </div>
              <footer className="flex gap-10 bg-black w-full justify-center p-3">
                  <a href="https://www.instagram.com/tedx_dital/"><Image src="/instagram.jpg" alt="instagram" width={30} height={30} className="rounded-full"/></a>
