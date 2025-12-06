@@ -18,137 +18,140 @@ const biryani = Biryani({
 
 export default function SpeakerPage({ params }: {params: Promise<{ id: string }>}) {
     const speakers = [
-        "omer-ozkan",
-        "mehmet-gurcan",
-        "ugur-onur",
-        "boran-eser-kavaz",
-        "oltan-baran",
+        "Prof.-Armağan-Günal",
+        "Prof.-Dr.-Şükrü-Özen",
+        "Mehmet-Yeşil-Yeşil",
+        "Sümer-Ezgü",
+        "İsmail-Balaban",
+        "Tolga-Cömertoğlu"
+        "Özgür-Yumakoğulları"
     ];
 
     const speaker_details: Record<typeof speakers[number], { name: string; title: string; description: ReactElement }> = {
-        "omer-ozkan": {
-            name: "Ömer Özkan",
-            title: "Profesör Doktor",
+        "Prof.-Armağan-Günal": {
+            name: "Armağan Günal",
+            title: "Profesör",
             description:
                 <>
-                    <p>Ömer Özkan, 1971&apos;de Ankara’da doğdu. Dünyadaki ilk rahim nakli ve
-                        Türkiye&apos;deki ilk çift kol nakli gibi ulusal ve uluslararası düzeyde
-                        birçok başarıya ve ilke imza atmış bir isimdir.
+                    <p>Antalya-Korkuteli ilçesi, 1976 yılı doğumlu Armağan Günal;ilkokul, ortaokul ve lise eğitimini Antalya’da tamamladı. 1994 yılında girdiği 
+                        Gülhane Askeri Tıp Fakültesinden 2000 yılında mezun oldu.
+                        2001-2003 yılları arasında kıta askeri tabipliği hizmetini Isparta Piyade Alayı’nda yaptıktan sonra başladığı 
+                        Gülhane Askeri  Tıp Fakültesi Patoloji Uzmanlığı eğitimini 2006 yılında tamamladı.
+                        2008 yılında devlet bursu ile ABD Yale Üniversitesi Tıp Fakültesinde “gastrointestinal sistem patolojisi” alanında eğitim gördü.
+
                     </p>
                     <p>
-                        Öğrenim hayatına Ankara&apos;da başlamış, Ankara Cumhuriyet
-                        Lisesinden 1988 yılında mezun olduktan sonra Hacettepe Üniversite
-                        Tıp Fakül tesini okudu. 1995&apos;te tıp doktoru ünvanı alan Özkan,
-                        uzmanlık eğitimini yine Hacettepe Üniversitesi Tıp Fakül tesinde
-                        Plastik, Rekonstrüktif ve Estetik
+                        2009 yılında Gülhane Askeri Tıp Fakültesi Tıbbi Patoloji Yardımcı Doçent Öğretim Üyesi kadrosuna atanan Günal, 2013 yılında Doçentlik
+                        unvanı aldı. Daha sonra sırasıyla Erzurum Mareşal Çakmak Asker Hastanesi, Erzurum Bölge Eğitim Araştırma Hastanesi ve Kırıkkale Yüksek
+                        İhtisas Hastanesi’nde görev yaptı. 2018 yılında Sağlık Bilimleri Üniversitesi Gülhane Eğitim Araştırma Hastanesi Tıbbi Patoloji Doçent
+                        Öğretim Üyesi kadrosuna atandı. 2021 yılından itibaren Profesörlük kadrosuna yükseldi.
                     </p>
                     <p>
-                        Cerrahi alanında almıştır. 2001 yılından itibaren Akdeniz Üniversitesi Tıp Fakül tesinde görev
-                        yapmaya başlayan Özkan, bu sürede dünyanın sayılı merkezlerinde mikrocerrahinin farklı
-                        alanlarında çalışmaya devam etmiştir. Japonya&apos;da Perforator Flepler ve Supermikrocerrahi
-                        alanında, Tayvan Shou Üniversitesi, E-Da Hastanesi&apos;nde Plastik Cerrahi ve El Cerrahisi
-                        alanında, Almanya Münih&apos;te Bogenhausen Technical Universityde EURAPS Young Plastic
-                        Surgeons bursu ile genel mikrocerrahi alanında klinik fellowluk yapmıştır. 2004 yılında
-                        yardımcı doçent olan Özkan, 2006 yılında doçent ünvanı almaya hak kazanmıştır. 2007
-                        yılında Akdeniz Üniversitesi Teşvik Ödülü, 2010 yılında ATSO Yılın Bilim Adamı Ödülü, 2011
-                        yılında Sağlık Bakanlığı Yılın Doktoru Ödülü Ömer Özkan&apos;ın aldığı ödüllerden bazılarıdır.
+                        Akademik alanda 45 uluslararası olmak üzere 70’in üzerinde yayını bulunan Günal, çok sayıda bilimsel kongre, toplantı ve kursta davetli
+                        konuşmacı ve eğitici olarak görev almıştır. Ayrıca, Gülhane Tıp Fakültesi başta olmak üzere yurt içi ve yurt dışı tıp fakülteleri, 
+                        hemşirelik fakültesi ile sağlık meslek yüksekokullarında görevli öğretim üyesi olarak patoloji dersleri vermiştir.
+                        Hâlâ Sağlık Bilimleri Üniversitesi Antalya Eğitim Araştırma Hastanesi Tıbbi Patoloji Bölümü’nde Öğretim Üyesi ve Birim İdari Sorumlusu 
+                        olarak görevini sürdürmektedir.
+                        Armağan Günal, evli ve iki çocuk babasıdır.
+
                     </p>
                 </>
         },
-        "mehmet-gurcan": {
-            name: "Mehmet Gürcan",
-            title: "Konyaaltı İlçe Milli Eğitim Müdürü",
+        "Prof.-Dr.-Şükrü-Özen": {
+            name: "Prof. Dr. Şükrü Özen",
+            title: "Prof. Dr",
             description:
                 <>
                     <p>
-                        1977 yılında Burdur ilinin Bucak ilçesinde doğdu. Or taokul ve lise
-                        öğrenimini Bucak İmam Hatip Lisesinde, üniversiteyi Manisa Celal
-                        Bayar Üniversitesi Demirci Eğitim Fakül tesi Türkçe Öğretmenliği
-                        bölümünde tamamladı. Mersin Toros Üniversitesinde İşletme
-                        alanında tezsiz yüksek lisans ve Akdeniz Üniversitesi Eğitim
-                        Bilimleri Enstitüsü Eğitim Bilimleri Anabilim Dalında Eğitim
-                        Yönetimi Denetimi ve Planlaması alanında tezli yüksek lisans yaptı.
-                        Tez çalışması olarak “Devlet Okullarındaki Norm Fazlası Sınıf
-                        Öğretmenlerinin Norm Fazlası Öğretmen Olmaya İlişkin
-                        Görüşlerini” araştırdı.
+                    Karşımızda Türkiye’nin önde gelen akademik seslerinden, öğrenme aşkını asla yitirmemiş akademisyen Prof. Dr. Şükrü Özen. 1971 yılında doğan 
+                    Özen, Yıldız Teknik Üniversitesinden Elektrik Elektronik Mühendisi olarak mezun olmuş ve çeşitli üniversitlerde yüksek lisans yapmıştır
                     </p>
                     <p>
-                        1999 yılında Batman İmam Hatip Lisesinde öğretmen olarak göreve başladıktan sonra
-                        Antalya ve Burdur illerinde öğretmen, okul müdür yardımcısı ve kurum müdürü
-                        olarak görev yaptı. 2014 yılından itibaren Ispar ta’nın Uluborlu ilçesinde Şube
-                        Müdürlüğü, Antalya’nın Gündoğmuş ilçesinde İlçe Millî Eğitim Müdürlüğü, Antalya İl
-                        Millî Eğitim Müdürlüğünde Şube Müdürlüğü ve İl Millî Eğitim Müdür Yardımcısı
-                        görevlerini yürüttü.
+                    Özen, akademik yolculuğunda Süleyman Demirel Üniversitesinde araştırma görevlisi olmaktan Akdeniz Üniversitesinde rektör yardımcısı
+                    olmaya kadar birçok farklı görevde bulunmuştur. Öğretim görevlisi, öğretim üyesi ve bölüm başkanlığı bunlardan sadece bazılarıdır. 
+                    Akdeniz Üniversitesine katıldığından beri bölgenin en güçlü Elektrik Elektronik Mühendisliği bölümlerinden birini şekillendirmiştir.
                     </p>
                     <p>
-                        07 Şubat 2024 tarihinden itibaren Antalya Konyaal tı İlçe Millî Eğitim Müdürü olarak
-                        görev yapmaktadır.
+                    Elektromanyetik alan, elektrik güvenliği, enerji sistemleri gibi alanlarda 100 üzerinde bildirisi, 7 tane kitabı vardır
                     </p>
                     <p>
-                        Evli ve iki çocuk babasıdır.
+                    Özen, Akdeniz Üniversitesinde rektör yardımcısı olarak atandığı günden beri üniversitenin gelişimi için çabalamaktadır.
                     </p>
                 </>
         },
-        "ugur-onur": {
-            name: "Uğur Önür",
-            title: "Sanatçı",
+        "Mehmet-Yeşil-Yeşil": {
+            name: "Mehmet Yeşil Yeşil",
+            title: "Başpehlivan",
             description:
                 <>
-                    Uğur Önür, 1987 yılında Burdur ’un Çel tikçi ilçesine bağlı
-                    Kuzköy&apos;de dünyaya geldi. Küçük yaşlarda amcasından etkilenmiş
-                    ve müziğe ilgi duymaya başlamıştır. Önür, aynı zamanda TRT
-                    Ankara Radyosu sanatçısıdır. Sanatçının YouTube hesabında
-                    toplamda 164 tane videosu bulunmaktadır. Önür hem Burdur
-                    yöresine ait türküleri seslendirmekte hem de Anadolu’nun birçok
-                    yöresine ait eserleri icra etmektedir. Sanatçı Ispar ta Anadolu
-                    Güzel Sanatlar Lisesinde keman ve müzik eğitimi gördü. Daha
-                    sonra İstanbul Teknik Üniversitesi Türk Musikisi Devlet
-                    Konservatuvarı Temel Bilimler Bölümü’nde müzik eğitimi aldı.
-                    Sanatçının şu ana kadar 8 adet albüm çalışması bulunmaktadır.
+                    Gücü, disiplini ve azmi ile geleneksel spor kültürünün sembollerinden biri olan gelen millî sporcumuz, Mehmet Yeşil Yeşil. 1986’da Antalya’nın Aksu ilçesine bağlı 
+                    küçük bir köyde doğan Yeşil Yeşil; efsanevî güreşçilerin ve halk kahramanlarının hikayeleriyle büyüdü. Spora olan ilgisi küçük yaşlarda başladı. Yeşil Yeşil, Avrupa 
+                    Gençler Güreşi Şampiyonası’nda birincilik, Dünya Gençler Şampiyonası’nda üçüncülük, Kırkpınar Yağlı Güreşleri’nde birincilik ve altın kemere sahip olmak gibi birçok 
+                    başarıya imza atmıştır. 2009 ve 2010 yıllarında Kırkpınar Başpehlivanı oldu. Yeşil Yeşil’in yarışmalardaki yükselişi onu ülke çapında tanınan ve genç sporculara yol
+                    gösteren örnek bir sporcu haline getirdi.
                 </>
         },
-        "boran-eser-kavaz": {
-            name: "Boran Eser Kavaz",
-            title: "Yazar-Turist Rehberi",
+        "Sümer-Ezgü": {
+            name: "Sümer Ezgü",
+            title: "Türk Halk Müziği Sanatçısı",
             description:
                 <>
                     <p>
-                        Boran Eser Kavaz, 1978’de Ankara’da doğdu. Eğitimini Ankara’da
-                        tamamladı, 13 yıl bankacılık sektöründe müfettiş ve idareci olarak
-                        çalıştı. 2009 yılında Antalya’ya taşınan Kavaz, kızına yaşadığı kenti
-                        anlatmak için Antalya’nın çok bilinmeyen hikayelerinin peşine
-                        düştü.
+                    Her şey bir melodinin dokunuşuyla başlar. Karşımızda derlemeci, besteci, yorumcu, halk müziği sanatçımız Sümer Ezgü.1960 yılında Burdur’da dünyaya geldi. 
+                    Müzikle her zaman içli dışlı olan Sümer Ezgü; henüz çok küçük yaşlardayken bağlama, melodika ve mandolin çalabiliyordu. Ezgü, sadece müziğe değil, dansa da ilgi
+                    duymuştur. Bir yandan müzikle uğraşırken bir yandan da dans eğitmenliği yapmaktadır. 
                     </p>
                     <p>
-                        Antalya Meraki adıyla da bilinen Kavaz, turist rehberi olarak
-                        Kaleiçi ve Antalya gezileri düzenliyor. Kavaz, aynı zamanda
-                        çalışmalarını sosyal medyada @antalyameraki sayfasında
-                        paylaşırken aynı isimli kitabı da var. Kavaz, kitabında Antalya
-                        piyazının nereden çıktığı, Kaleiçi’nin gizli kaçış tünelleri,
-                        Döşemeal tı, Hurma, Boğaçayı gibi yer adlarının kökeni gibi
-                        Antalya’ya dair merak edilen birçok konuyu kendine has üslubuyla
-                        anlatıyor.
+                    16 yıl boyunca TRT Ankara Radyosu’nda çalışmıştır. Ezgü; dans, enstrüman ve resim gibi eğitimlerin verildiği bir sanat akademisine sahiptir. Gerek Burdur’a 
+                    gerek başka yörelere ait müzikleri kendi duygu ve düşüncelerini harmanlayarak sanatını icra etmektedir. Sadece Türkiye’de değil, birçok ülkede sanatını icra 
+                    etmiş ve insanların ruhuna dokunmuştur. Sanatçının şu ana kadar 7 albüm çalışması bulunmaktadır.
                     </p>
                 </>
         },
-        "oltan-baran": {
-            name: "Oltan Baran",
-            title: "Senarist",
+        "İsmail-Balaban": {
+            name: "İsmail Balaban",
+            title: "Başpehlivan",
             description:
                 <>
                     <p>
-                        Ol tan Baran, 1999 yılında Malatya’da doğdu, çocukluk ve ilk
-                        gençlik yılları Antalya’da geçti. 2024 yılında Boğaziçi Üniversitesi
-                        Türk Dili ve Edebiyatı ve Tarih bölümlerinden onur derecesiyle
-                        mezun oldu. Şu anda Boğaziçi Üniversitesinde Yeni Türk
-                        Edebiyatı alanında yüksek lisans eğitimine devam ediyor.
-                        Akademik çalışmalarının yanı sıra bir yapım şirketinde senarist
-                        olarak çalışan Ol tan, yazıya ve anlatıya duyduğu tutkuyla
-                        edebiyat , tiyatro ve sinema alanlarında üretmeyi sürdürüyor ve
-                        bu alanlar arasında geçişken bir dil kurmaya önem veriyor.
+                    Karşımızda bitmek bilmeyen azmi ve emeği ile hedeflerine giden yolu adımlayan, millî sporcumuz İsmail Balaban var. Balaban, 1987’de köklü bir güreş mirasına sahip 
+                    olan Elmalı’nın Akçay ilçesinde, halihazırda sporla iç içe olan bir ailede dünyaya gelmiştir. Balaban, genç yaşlarda antrenmana başlayarak kendisini Türkiye’nin
+                    en büyük güreş arenalarına taşıyacak olan güç ve dayanıklılığı inşa etti. Balaban, Kırkpınar Yağlı Güreşleri’nde 2013 ve 2017 yıllarında birincilik ve 
+                    başpehlivanlık, 2020 ve 2022 ağır sıklette Dünya Şalvar Güreşi Şampiyonluğu gibi başarılara imza atmıştır. Kendisi aynı zamanda Acun Ilıcalı’nın televizyon 
+                    programı olan Survivor’da 2021 yılının şampiyonu olmuştur. Millî sporcumuz eğitimini Adnan Menderes Üniversitesinde Beden Eğitimi ve Spor Yüksekokulu mezunu 
+                    olarak taçlandırmıştır. Kendisi genç sporculara ilham kaynağı olmaya devam ediyor, onlara disiplin ve sürekliliğin başarı için ne kadar önemli olduğunu hatırlatıyor.
                     </p>
                 </>
         },
+            "Tolga-Cömertoğlu": {
+            name: "Tolga Cömertoğlı",
+            title: "İş İnsanı",
+            description:
+                <>
+                    <p>
+                    İş dünyasındaki başarılı girişimleri ve yatırımlarıyla dikkat çeken Tolga Cömertoğlu, Türkiye’nin önde gelen iş insanlarından biri olarak tanınıyor. 
+                    E-ticaret, dijital pazarlama, teknoloji ve turizm gibi farklı sektörlerde faaliyet gösteren Cömertoğlu, özellikle Delphin Otelleri ile turizm sektöründe 
+                    büyük bir başarıya imza atmıştır. Tolga Cömertoğlu, 1980 yılında İstanbul’da dünyaya geldi. Eğitim hayatını İstanbul’da tamamlayan Cömertoğlu, İstanbul 
+                    Teknik Üniversitesi İşletme Fakültesinden mezun oldu. Ardından Bilgi Üniversitesinde yüksek lisans yaparak akademik kariyerini ilerletti.
+                    İş dünyasında ileri görüşlü yaklaşımı ve ilerlemenin cesur fikirlerle başladığı inancıyla bilinen Cömertoğlu, sadece girişimciliğiyle değil; aynı zamanda 
+                    iyi niyeti ve yardımseverliğiyle de tanınmaktadır. Başarılı iş insanı Tolga Cömertoğlu, Manolya Cömertoğlu ile evlidir. Tolga ve Manolya Cömertoğlu, iş 
+                    dünyasındaki başarılarının yanı sıra sosyal sorumluluk projeleriyle de öne çıkmaktadır. Eğitim ve sağlık alanında yaptıkları bağışlar, yardımlar ve destekler,
+                    onların topluma olan duyarlılığını göstermektedir. Özellikle çocukların eğitimine destek veren Cömertoğlu, burs programları ve hayır projeleriyle birçok öğrenciye
+                    yardımcı olmaktadır. Delphin Otelleri yönetim kurulu üyesi olan Cömertoğlu, 7 farklı otelin yönetim kurulunda yer almaktadır.
+                    </p>
+                </>
+            },
+            name: "Özgür-Yumakoğulları",
+            title: "Uçak Sistem Mühendisi",
+            description:
+                <>
+                    <p>
+                    Gökyüzüne olan derin tutkusuyla tanınan Özgür Yumakoğulları,1976 yılında Antalya’nın Korkuteli ilçesinde dünyaya gelmiştir.Yumakoğulları, Türk Havayolları’nın 
+                    teknik yöneticilerinden biridir. Yumakoğulları,bu konuma gelmek için yıllarca uğraşmış; mekanik teknisyenden vardiya şefliğine kadar birçok görevde bulunmuş, 
+                    deneyimli biridir. Kendisi Anadolu Üniversitesi Havacılık ve Uzay Bilimleri Fakültesi mezunudur. İlerleyen yıllarda İstanbul Teknik Üniversitesinde yüksek 
+                    lisans yapmıştır.Yumakoğulları’nın havacılıkla ilgili yazdığı bir kitap bulunmaktadır.
+                    </p>
+                </>
     };
 
     console.log("Received params:", params); // Debugging
