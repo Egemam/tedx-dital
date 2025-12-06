@@ -11,7 +11,7 @@ const gildaDisplay = Gilda_Display({
 
 export default function Speakers() {
 
-    const speakers = [["omer-ozkan","Ömer Özkan"],["mehmet-gurcan","Mehmet Gürcan"],["ugur-onur","Uğur Önür"],["boran-eser-kavaz","Boran Eser Kavaz"],["oltan-baran","Oltan Baran"]]
+    const speakers = [["Prof.-Armağan-Günal","Armağan Günal"],["Prof.-Dr.Şükrü-Özen","Şükrü Özen"],["Mehmet-Yeşil-Yeşil","Mehmet Yeşil Yeşil"],["Sümer-Ezgü","Sümer Ezgü"],["İsmail-Balaban","İsmail Balaban"],["Tolga-ömertoğlu","Tolga ömertoğlu"],["Özgür-Yumakoğulları","Özgür Yumakoğulları"]]
     const speakers_buttons:ReactElement[] = []
     speakers.forEach(speaker => {
         speakers_buttons.push(
