@@ -24,7 +24,7 @@ export default function SpeakerPage({ params }: {params: Promise<{ id: string }>
         "Sümer-Ezgü",
         "İsmail-Balaban",
         "Tolga-Cömertoğlu",
-        "Özgür-Yumakoğulları"
+        "Özgür-Yumakoğulları",
     ];
 
     const speaker_details: Record<typeof speakers[number], { name: string; title: string; description: ReactElement }> = {
