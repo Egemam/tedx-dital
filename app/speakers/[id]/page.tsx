@@ -23,7 +23,7 @@ export default function SpeakerPage({ params }: {params: Promise<{ id: string }>
         "Mehmet-Yeşil-Yeşil",
         "Sümer-Ezgü",
         "İsmail-Balaban",
-        "Tolga-Cömertoğlu"
+        "Tolga-Cömertoğlu",
         "Özgür-Yumakoğulları"
     ];
 
@@ -124,7 +124,7 @@ export default function SpeakerPage({ params }: {params: Promise<{ id: string }>
                 </>
         },
             "Tolga-Cömertoğlu": {
-            name: "Tolga Cömertoğlı",
+            name: "Tolga Cömertoğlu",
             title: "İş İnsanı",
             description:
                 <>
